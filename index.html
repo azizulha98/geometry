@@ -94,6 +94,82 @@
             </div>
           </div>
         </div>
+        <!-- ellipse  -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="px-10 pt-2">
+            <img src="./images/ellipse.png" alt="ellipse"/>
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-2xl font-semibold uppercase tracking-widest">ellipse</h2>
+            <p class="text-xl">Area: πab </p>
+            <div class="flex justify-center items-center space-x-2">
+              <div class="flex items-center relative w-full">
+                <input type="text" id="ellipse-major" class="bg-slate-200 rounded w-full py-1 pl-2 relative" placeholder="Major">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+              <div class="flex items-center relative w-full">
+                <input type="text" id="ellipse-minor" class="bg-slate-200 rounded w-full pl-2 py-1 relative" placeholder="Minor">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+            </div>
+            <p class="text-xl">Area: <span id="ellipse-field">00</span> cm<sup>2</sup></p>
+
+
+            <div class="w-full">
+              <button class="btn btn-primary w-full" onclick="ellipseArea()">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- pentagon  -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="px-10 pt-2">
+            <img src="./images/pentagon.png" alt="pentagon"/>
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-2xl font-semibold uppercase tracking-widest">pentagon</h2>
+            <p class="text-xl">Area = 0.5 X Perimeter X Apothem </p>
+            <div class="flex justify-center items-center space-x-2">
+              <div class="flex items-center relative w-full">
+                <input type="text" id="pentagon-perimeter" class="bg-slate-200 rounded w-full py-1 pl-2 relative" placeholder="Perimeter">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+              <div class="flex items-center relative w-full">
+                <input type="text" id="pentagon-apothem" class="bg-slate-200 rounded w-full pl-2 py-1 relative" placeholder="Apothem">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+            </div>
+            <p class="text-xl">Area: <span id="pentagon-field">00</span> cm<sup>2</sup></p>
+            <div class="w-full">
+              <button class="btn btn-primary w-full" onclick="pentagonArea()">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- rhombus  -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="px-10 pt-2">
+            <img src="./images/rhombus.png" alt="rhombus"/>
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-2xl font-semibold uppercase tracking-widest">rhombus</h2>
+            <p class="text-xl">Area = Diagonal1 X diagonal2 </p>
+            <div class="flex justify-center items-center space-x-2">
+              <div class="flex items-center relative w-full">
+                <input type="text" id="rhombus-diagonal1" class="bg-slate-200 rounded w-full py-1 pl-2 relative" placeholder="diagonal1">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+              <div class="flex items-center relative w-full">
+                <input type="text" id="rhombus-diagonal2" class="bg-slate-200 rounded w-full pl-2 py-1 relative" placeholder="diagonal2">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+            </div>
+            <p class="text-xl">Area: <span id="rhombus-field">00</span> cm<sup>2</sup></p>
+
+
+            <div class="w-full">
+              <button class="btn btn-primary w-full" onclick="rhombusArea()">Calculate</button>
+            </div>
+          </div>
+        </div>
 
       </div>
       <div>
