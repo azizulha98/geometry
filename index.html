@@ -1,13 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Geometry</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  
+  <header class="bg-lime-500 max-w-screen-xl mx-auto py-2 px-2 md:px-4 lg:px-6">
+  </header>
+
+  <main class="bg-slate-50 max-w-screen-xl mx-auto my-2 py-5 px-2 md:px-4 lg:px-6">
+    <section class="flex flex-col md:flex-row gap-4">
+      <div class="flex-1 grid gap-4 grid-cols-1 lg:grid-cols-3">
+        <!-- TRIANGLE  -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="px-10 pt-2">
+            <img src="./images/triangle.png" alt="triangle"/>
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-2xl font-semibold uppercase tracking-widest">triangle</h2>
+            <p class="text-xl">Area = 0.5 X Base X Height </p>
+            <div class="flex justify-center items-center space-x-2">
+              <div class="flex items-center relative w-full">
+                <input type="text" id="triangle-base" class="bg-slate-200 rounded w-full py-1 pl-2 relative" placeholder="Base">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+              <div class="flex items-center relative w-full">
+                <input type="text" id="triangle-height" class="bg-slate-200 rounded w-full pl-2 py-1 relative" placeholder="Height">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+            </div>
+            <p class="text-xl">Area: <span id="triangle-field">00</span> cm<sup>2</sup></p>
+
+
+            <div class="w-full">
+              <button class="btn btn-primary w-full" onclick="triangleArea()">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- RECTANGLE  -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="px-10 pt-2">
+            <img src="./images/rectangle.png" alt="rectangle"/>
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-2xl font-semibold uppercase tracking-widest">rectangle</h2>
+            <p class="text-xl">Area = Width X Length </p>
+            <div class="flex justify-center items-center space-x-2">
+              <div class="flex items-center relative w-full">
+                <input type="text" id="rectangle-width" class="bg-slate-200 rounded w-full py-1 pl-2 relative" placeholder="Width">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+              <div class="flex items-center relative w-full">
+                <input type="text" id="rectangle-length" class="bg-slate-200 rounded w-full pl-2 py-1 relative" placeholder="Length">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+            </div>
+            <p class="text-xl">Area: <span id="rectangle-field">00</span> cm<sup>2</sup></p>
+
+
+            <div class="w-full">
+              <button class="btn btn-primary w-full" onclick="rectangleArea()">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- parallelogram  -->
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="px-10 pt-2">
+            <img src="./images/parallelogram.png" alt="parallelogram"/>
+          </figure>
+          <div class="card-body">
+            <h2 class="text-center text-2xl font-semibold uppercase tracking-widest">parallelogram</h2>
+            <p class="text-xl">Area = Width X Length </p>
+            <div class="flex justify-center items-center space-x-2">
+              <div class="flex items-center relative w-full">
+                <input type="text" id="parallelogram-base" class="bg-slate-200 rounded w-full py-1 pl-2 relative" placeholder="Base">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+              <div class="flex items-center relative w-full">
+                <input type="text" id="parallelogram-height" class="bg-slate-200 rounded w-full pl-2 py-1 relative" placeholder="Height">
+                <p class="absolute right-0 bg-slate-500 rounded-e px-1 py-1 text-white">cm</p>
+              </div>
+            </div>
+            <p class="text-xl">Area: <span id="parallelogram-field">00</span> cm<sup>2</sup></p>
+
+
+            <div class="w-full">
+              <button class="btn btn-primary w-full" onclick="parallelogramArea()">Calculate</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold text-center uppercase tracking-widest">Area Calculation</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-emerald-500 max-w-screen-xl mx-auto py-2 px-2 md:px-4 lg:px-6"></footer>
 
   <script src="./scripts/geometry.js"></script>
 </body>
+
 </html>
